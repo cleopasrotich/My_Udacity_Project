@@ -5,28 +5,37 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+
 </head>
 <body>
-    <h1>Lab: Pixel Art Maker</h1>
+    
+    <h1><large><strong>Cleo's:Pixel Art Maker</strong></large></h1>
+    
+    <div class="jumbotron">
+        <h2>Choose Grid Size</h2>
+        <form id="sizePicker">
+            Grid Height:
+            <input type="number" id="inputHeight" name="height" min="1" value="1">
+            Grid Width:
+            <input type="number" id="inputWidth" name="width" min="1" value="1">
+            <input id="submit" type="button" value="submit" class="btn btn-primary btn-xs" >
+        </form>
 
-    <h2>Choose Grid Size</h2>
-    <form id="sizePicker">
-        Grid Height:
-        <input type="number" id="inputHeight" name="height" min="1" value="1">
-        Grid Width:
-        <input type="number" id="inputWidth" name="width" min="1" value="1">
-        <input id="submit" type="button" value="submit">
-    </form>
+        <h2><span class="glyphicon glyphicon-hand-down">Pick A Color</h2>
+        <input type="color" id="colorPicker">
 
-    <h2>Pick A Color</h2>
-    <input type="color" id="colorPicker">
-
-    <h2>Design Canvas</h2>
-    <p>
-      <i><b>Pixel art:For those who love art</b></i>
-    </p>
+        <h2>Design Canvas</h2>
+    </div>
     <table id="pixelCanvas">
     </table>
+<footer>
+    <p>
+        <i>This is pixel art for those who love art.</i>
+    </p>
+</footer>
     <script src="designs.js"></script>
 </body>
 </html>

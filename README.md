@@ -2,7 +2,7 @@
 
 ***my project for the google Africa scholarship challenge***
 
- ![example](art.png)
+ ![example](pic_2.png)
 
  ### Instructions for using the pixel canvas:
 
@@ -10,3 +10,4 @@
  1. Then hit the submit button.
  1. Choose the desired color from the color picker.
  1. Enjoy the art work.
+ 
