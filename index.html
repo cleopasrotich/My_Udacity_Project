@@ -10,32 +10,63 @@
 
 
 </head>
-<body>
-    
-    <h1><large><strong>Cleo's:Pixel Art Maker</strong></large></h1>
-    
-    <div class="jumbotron">
-        <h2>Choose Grid Size</h2>
-        <form id="sizePicker">
-            Grid Height:
-            <input type="number" id="inputHeight" name="height" min="1" value="1">
-            Grid Width:
-            <input type="number" id="inputWidth" name="width" min="1" value="1">
-            <input id="submit" type="button" value="submit" class="btn btn-primary btn-xs" >
-        </form>
-
-        <h2><span class="glyphicon glyphicon-hand-down">Pick A Color</h2>
-        <input type="color" id="colorPicker">
-
-        <h2>Design Canvas</h2>
+<body class="container" >
+    <div class="row">
+        <h1><large><strong>Cleo's: Pixel Art Maker</strong></large></h1>
     </div>
-    <table id="pixelCanvas">
-    </table>
-<footer>
-    <p>
-        <i>This is pixel art for those who love art.</i>
-    </p>
-</footer>
+    <div class="row">
+        <div class="jumbotron">
+            <h2>Choose Grid Size</h2>
+
+            <form class="form-horizontal" id="sizePicker">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label for="inputHeight" class="col-sm-6 control-label">
+                                    Grid Height:
+                                </label>
+                                <div class="col-sm-6">
+                                    <input type="number" class="form-control" id="inputHeight" name="height" min="1" value="1">
+                                </div>                    
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label for="inputWidth" class="col-sm-6 control-label">
+                                    Grid Width:
+                                </label>
+                                <div class="col-sm-6">
+                                    <input type="number" class="form-control" id="inputWidth" name="width" min="1" value="1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <input id="submit" type="button" value="Submit" class="btn btn-info btn-block" >
+                        </div>
+                    </div>
+                </div>
+                
+
+                
+            </form>
+
+            <h2><span class="glyphicon glyphicon-hand-down"></span> Pick A Color</h2>
+            <input type="color" id="colorPicker">
+
+            <h2>Design Canvas</h2>
+        </div>
+    </div>
+    <div class="row">
+        <table id="pixelCanvas">
+        </table>
+    </div>
+    <footer>
+        <p>
+            <i>This is pixel art for those who love art.</i>
+        </p>
+    </footer>
     <script src="designs.js"></script>
 </body>
 </html>

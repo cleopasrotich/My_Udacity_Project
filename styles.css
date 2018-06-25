@@ -1,7 +1,7 @@
 body {
     text-align: center;
     color: #020e21;
-    font-family: fantasy;
+    font-family: sans-serif;
     background-color: #e8b6ed;
 }
 
@@ -15,10 +15,10 @@ h1 {
 }
 
 h2 {
-    font-family: Monoton;
+    /*font-family: Monoton;*/
     margin: 1em 0 0.25em;
     font-weight: 200;
-    font-style: oblique;
+    /*font-style: oblique;*/
     color:  #ff66d9;
 }
 
@@ -46,19 +46,18 @@ td {
     width: 17px;
 }
 
-input[type=number] {
+/*input[type=number] {
     width: 6em;
-}
+}*/
 
 
-#inputHeight,#inputWidth{
-  font-family: sans-serif;
+/*#inputHeight,#inputWidth{
   font-style: italic;
   filter: drop-shadow();
   border-color: inherit;
   border-radius: 10px;
   font-weight: bolder;
-}
+}*/
 
 footer {
     padding: 2em 0;

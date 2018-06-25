@@ -2,7 +2,7 @@
 
 ***my project for the google Africa scholarship challenge***
 
- ![example](pic_2.png)
+ ![example](pic_3.png)
 
  ### Instructions for using the pixel canvas:
 
