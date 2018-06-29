@@ -1,72 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
     <title>Pixel Art Maker!</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-
-
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="container" >
+<body>
     <div class="row">
-        <h1><large><strong>Cleo's: Pixel Art Maker</strong></large></h1>
-    </div>
-    <div class="row">
-        <div class="jumbotron">
-            <h2>Choose Grid Size</h2>
-
-            <form class="form-horizontal" id="sizePicker">
-                <div class="col-sm-offset-2 col-sm-10">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="form-group">
-                                <label for="inputHeight" class="col-sm-6 control-label">
-                                    Grid Height:
-                                </label>
-                                <div class="col-sm-6">
-                                    <input type="number" class="form-control" id="inputHeight" name="height" min="1" value="1">
-                                </div>                    
-                            </div>
+        <!-- The sidebar (control panel) -->
+        <div class="col-sm-3">
+            <div class="sidebar">
+                <!---->
+                <div class="title">
+                     <p>Choose Grid Size</p>
+                </div>
+                <!-- Grid Design -->
+                <form id="sizePicker">
+                    <div class="form-group design-input">
+                        <label for="inputHeight" class="col-sm-6 control-label">
+                            Grid Height:
+                        </label>
+                        <div class="col-sm-6">
+                            <input type="number" class="form-control" id="inputHeight" name="height" min="1" value="1">
                         </div>
-
-                        <div class="col-sm-4">
-                            <div class="form-group">
-                                <label for="inputWidth" class="col-sm-6 control-label">
-                                    Grid Width:
-                                </label>
-                                <div class="col-sm-6">
-                                    <input type="number" class="form-control" id="inputWidth" name="width" min="1" value="1">
-                                </div>
-                            </div>
+                    </div>
+                    <div class="form-group design-input">
+                        <label for="inputWidth" class="col-sm-6 control-label">
+                            Grid Width:
+                        </label>
+                        <div class="col-sm-6">
+                            <input type="number" class="form-control" id="inputWidth" name="width" min="1" value="1">
                         </div>
-                        <div class="col-sm-4">
-                            <input id="submit" type="button" value="Submit" class="btn btn-info btn-block" >
+                    </div>
+                    <div class="design-input press">
+                        <input id="submit" type="button" value="Submit" class="btn btn-info btn-block">
+                    </div>                    
+                </form>
+                <!-- Color Picker -->
+                <div class="pick">
+                    <h2> Pick A Color</h2>
+                </div>
+                <div class="color-pick ">
+                    <span class="glyphicon glyphicon-hand-right">
+                        <input type="color" id="colorPicker">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- Content Area -->
+        <div class="col-sm-9">
+            <div class="content">
+                <!-- Heading -->
+                <div class="row">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <div class="heading">
+                            <h1>Cleo's - Pixel Art Maker</h1>
                         </div>
                     </div>
                 </div>
                 
-
-                
-            </form>
-
-            <h2><span class="glyphicon glyphicon-hand-down"></span> Pick A Color</h2>
-            <input type="color" id="colorPicker">
-
-            <h2>Design Canvas</h2>
+                <!-- Design Canvas -->
+                <div class="design-canvas">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="canvas-title">
+                                <h2>Design Canvas</h2>
+                            </div>
+                            <table id="pixelCanvas"></table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <footer>
+                        <p>
+                            <i>This is pixel art for those who love art.</i>
+                        </p>
+                    </footer>
+                </div>
+                 
+            </div>
         </div>
     </div>
-    <div class="row">
-        <table id="pixelCanvas">
-        </table>
-    </div>
-    <footer>
-        <p>
-            <i>This is pixel art for those who love art.</i>
-        </p>
-    </footer>
+     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="designs.js"></script>
 </body>
 </html>
