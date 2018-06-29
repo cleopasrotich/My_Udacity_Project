@@ -15,11 +15,11 @@ $(function(){
         for(var c = 0; c < inputWidth.val(); c++){
           let tdId = trId + c.toString();
           grid += "<td id="+ tdId +"></td>"
-        };
+        }
       grid += "</tr>";
-    };
+    }
     return grid;
-  };
+  }
 
   $("#submit").on("click",function(){
     table.append(makeGrid());
