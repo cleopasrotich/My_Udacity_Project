@@ -1,0 +1,82 @@
+/* overall */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* sidebar */
+.sidebar {
+    color: #ddd;
+    background-color: #2e3d49;
+    padding: 10px;
+    height: 663px;
+}
+
+.design-input {
+    padding-top: 2em;
+}
+
+.title{
+    font-weight: 800;
+    font-size: 25pt;
+    padding-left: 0.5em;
+}
+
+.press {
+    padding-right: 1em;
+}
+
+.pick {
+    padding-left: 2em;
+}
+
+.color-pick {
+    padding-left: 3em;
+    font-size: 30px;
+}
+
+/* content */
+.heading {
+	font-family: Monoton;
+    font-size: 100px;
+    font-align: center;
+    color: crimson;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+    line-height: 23px;
+}
+
+.canvas-title {
+    font-family: Monoton;
+    text-align: center;
+    padding-right: 10em;
+}
+
+table,
+tr,
+td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+tr {
+    height: 17px;
+}
+
+td {
+    width: 17px;
+}
+
+footer {
+    padding: 2em 0;
+    margin: 3em 3em;
+    border-top: 1px solid #ddd;
+    color: #999;
+    text-align: center;
+    padding-right: 5em
+}
+
