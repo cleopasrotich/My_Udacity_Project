@@ -50,6 +50,8 @@ body {
     font-family: Monoton;
     text-align: center;
     padding-right: 10em;
+    padding-top: 10em;
+    padding-bottom: 15em;
 }
 
 table,
@@ -77,6 +79,6 @@ footer {
     border-top: 1px solid #ddd;
     color: #999;
     text-align: center;
-    padding-right: 5em
+    padding-right: 5em;
 }
 
