@@ -23,22 +23,30 @@ body {
 
 .press {
     padding-right: 1em;
+    padding-left: 1em;
 }
 
 .pick {
-    padding-left: 2em;
+    padding-left: 1em;
 }
 
 .color-pick {
-    padding-left: 3em;
-    font-size: 30px;
+    padding-left: 0.5em;
+    font-size: 25pt;
 }
+
+#colorPicker {
+    height: 40px;
+    width: 95px;
+    border-radius: 2px;
+}
+
 
 /* content */
 .heading {
 	font-family: Monoton;
     font-size: 100px;
-    font-align: center;
+    text-align: center;
     color: crimson;
 	font-style: normal;
 	font-variant: normal;
@@ -49,7 +57,6 @@ body {
 .canvas-title {
     font-family: Monoton;
     text-align: center;
-    padding-right: 10em;
     padding-top: 10em;
     padding-bottom: 15em;
 }
@@ -79,6 +86,4 @@ footer {
     border-top: 1px solid #ddd;
     color: #999;
     text-align: center;
-    padding-right: 5em;
 }
-
