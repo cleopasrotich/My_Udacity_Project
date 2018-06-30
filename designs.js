@@ -22,6 +22,7 @@ $(function(){
   }
 
   $("#submit").on("click",function(){
+    $(".canvas-title").remove();
     table.append(makeGrid());
     squares = table.find("td");
     squares.on("click", function(){
@@ -29,5 +30,8 @@ $(function(){
       $(this).css("background-color", color);
     });
   });
+
+
+
 
 });
