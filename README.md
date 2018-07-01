@@ -11,4 +11,4 @@
  1. Choose the desired color from the color picker.
  1. Enjoy the art work.
  
- *I recomend you use Minimum grid width of 55 and Minimum grid height of 27 to produce the best pixel art outlook*
+ *I recomend you use Minimum **Grid width** of 55 and Minimum **Grid height** of 27 to produce the best pixel art outlook*
